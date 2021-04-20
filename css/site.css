@@ -1,14 +1,90 @@
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-image: url('../images/pattern/png');
-    background-repeat: repeat;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url('../images/pattern/png');
+  background-repeat: repeat;
 }
+
 #hero{
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../images/travel.jpg");
-    background-attachment: fixed; 
-  }
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/travel.jpg");
+  background-attachment: fixed; 
+}
+  
+.centerImage{
+  text-align:center;
+  display:block;
+}
+
+.card {
+      width: 20%;
+      height: 300px; 
+      margin: 2.5%;
+      padding-top: 15%;
+      float: left;
+      background-color: white;
+      text-align: center;
+      color: black;
+      background-size:contain;
+      background-repeat: no-repeat; 
+    }
+
+    .card#adventurous {
+      background-image: url("../images/offerings/adventurous.jpg");
+    }
+
+    .card#anniversary {
+      background-image: url("../images/offerings/anniversary.jpg");
+    }
+    
+    .card#family {
+      background-image: url("../images/offerings/family.jpg");
+    }
+    
+    .card#fitness {
+      background-image: url("../images/offerings/fitness.jpg");
+    }
+    
+    .card#honeymoon {
+      background-image: url("../images/offerings/honeymoon.jpg");
+    }
+    
+    .card#reunion {
+      background-image: url("../images/offerings/reunion.jpg");
+    }
+    
+    .card#serene {
+      background-image: url("../images/offerings/serene.jpg");
+    }
+    
+    .card#thrill {
+      background-image: url("../images/offerings/thrill.jpg");
+    }
+
+    .card#cruise {
+      background-image: url("../images/offerings/cruise.jpg");
+    }
+    
+    .card#wedding {
+      background-image: url("../images/offerings/wedding.jpg");
+    }
+    
+    .card#disneyworld {
+      background-image: url("../images/offerings/disneyworld.jpg");
+    }
+    
+    .card#historic {
+      background-image: url("../images/offerings/historic.jpg");
+    }
+
+    input:valid{
+      border-color:green;
+    }
+
+    input:invalid{
+      border-color:red;
+    }
