@@ -11,18 +11,124 @@
 </head>
 
 
-<body>
+<body class="text-center">
     <div class="container">
 
         <header>
-
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        myTravelPlanner</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Our Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user_reg.html">User Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user_login.html">User Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
+        <main class="form-signin">
+            <form>
+              <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+              <h1 class="h3 mb-3 fw-normal">User Registration</h1>
+          
+            <fieldset>
+                <legend>Account Information</legend>
+            <p>
+                <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+            </p>
+            <p>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Username">
+                <label for="floatingInput">Username</label>
+              </div>
+            </p>
+            <p>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+            </p>
+            </fieldset> 
 
-        </main>
-        <footer>
+            <fieldset>
+                <legend>Security Questions</legend>
+            <p>
+                Select a Security Question: <select>
+                <option value="maidenName">What is your Mother's Maiden name?</option>
+                <option value="bestFriend">Who was your childhood best friend?</option>
+                <option value="firstPet">What was the name of your first pet?</option>
+                <option value="highSchool">What high school did you graduate from?</option>
+            </select>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Answer1">
+                <label for="floatingInput">Answer</label>
+              </div>
+            </p>
+            </p>  
+              Select a Security Question: <select>
+                <option value="maidenName">What is your favorite vacation destination?</option>
+                <option value="bestFriend">Where is the furthest you've traveled?</option>
+                <option value="firstPet">What is your dream job?</option>
+                <option value="highSchool">What town were you born in?</option>
+            </select>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Answer2">
+                <label for="floatingInput">Answer</label>
+              </div>
+            </p>
+            <p>
+              Select a Security Question: <select>
+                <option value="maidenName">What is your favorite hobby?</option>
+                <option value="bestFriend">Who is your favorite actor?</option>
+                <option value="firstPet">What is your favorite movie?</option>
+                <option value="highSchool">What was the make of your first vehicle?</option>
+            </select>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Answer3">
+                <label for="floatingInput">Answer</label>
+              </div>
+            </p>
+            </fieldset>
 
-        </footer>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Check here if you want to receive emails about special offers.
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+              <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+            </form>
+          </main>
+          <footer>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2021 Copyright:
+              <a class="text-dark" href="https://myTravelPlanner.com/">myTravelPlanner.com</a>
+            </div>
+          
+            </footer>
     
 
 
