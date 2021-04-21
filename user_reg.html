@@ -15,7 +15,7 @@
     <div class="container">
 
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         myTravelPlanner</a>
@@ -35,7 +35,7 @@
                                 <a class="nav-link" href="services.html">Our Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="user_reg.html">User Registration</a>
+                                <a class="nav-link active" href="user_reg.html">User Registration</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="user_login.html">User Login</a>
@@ -45,94 +45,209 @@
                 </div>
             </nav>
         </header>
-        <main class="form-signin">
-            <form>
+        <main class="form-signin"></main>
+          <div class="col-md-8 offset-2">
+          <form>
               <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-              <h1 class="h3 mb-3 fw-normal">User Registration</h1>
-          
+              <h1 class="display-4 fw-normal" style="color:white">User Registration</h1>
             <fieldset>
-                <legend>Account Information</legend>
-            <p>
-                <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-            </p>
-            <p>
-              <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Username">
-                <label for="floatingInput">Username</label>
-              </div>
-            </p>
-            <p>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div>
-            </p>
+              <legend>Account Information</legend>
+          <p>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+          </p>
+          <p>
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Username">
+              <label for="floatingInput">Username</label>
+            </div>
+          </p>
+          <p>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+          </p>
             </fieldset> 
-
+            <fieldset>
+              <legend>Contact Information</legend>
+          <p>
+            <div class="form-floating">
+              <div class="row">
+                <div class="col">
+                  <label for="inputFirstName">First Name</label>
+                  <input type ="text" class="form-control" id="inputFirstName" name="firstName">
+                </div>
+                <div class="col">
+                  <label for="inputLastName">Last Name</label>
+                  <input type ="text" class="form-control" id="inputLastName" name="lastName">
+                </div>
+              </div>
+            </div>
+          </p> 
+          <p>
+            <div class="form-floating">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="inputPhone">Phone Number</label>
+                  <input type ="tel" pattern="\(\d{3}\) \d{3}-\d{4}" class="form-control" id="inputPhone">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPhoneType">Phone Type</label>
+                  <p></p>
+                  <input type="radio" name="phoneType" value="email"> Home
+                  <input type="radio" name="phoneType" value="phone"> Work
+                  <input type="radio" name="phoneType" value="mail"> Cell
+                </div>
+              </div>
+            </div>
+          </p> 
+          <p>
+            <div class="form-floating">
+              <div class="col-12">
+                <label for="inputStreet">Street Address</label>
+                <p></p>
+                <input type="text" class="form-control" id="inputStreet" placeholder="Street">
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="form-floating">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="col-md-2">
+                  <label for="inputState">State</label>
+                  <select name="state" class="form-control" id="inputState" placeholder="State">
+                    <option value="null"></option>
+                    <option value="alabama">AL</option>
+                    <option value="alaska">AK</option>
+                    <option value="arizona">AZ</option>
+                    <option value="arkansas">AR</option>
+                    <option value="california">CA</option>
+                    <option value="colorado">CO</option>
+                    <option value="connecticut">CT</option>
+                    <option value="delaware">DE</option>
+                    <option value="florida">FL</option>
+                    <option value="georgia">GA</option>
+                    <option value="hawaii">HI</option>
+                    <option value="idaho">ID</option>
+                    <option value="illinois">IL</option>
+                    <option value="indiana">ID</option>
+                    <option value="iowa">IA</option>
+                    <option value="kansas">KS</option>
+                    <option value="kentucky">KY</option>
+                    <option value="louisiana">LA</option>
+                    <option value="maine">ME</option>
+                    <option value="maryland">MD</option>
+                    <option value="massachusetts">MA</option>
+                    <option value="michigan">MI</option>
+                    <option value="minnesota">MN</option>
+                    <option value="mississippi">MS</option>
+                    <option value="missouri">MO</option>
+                    <option value="montana">MT</option>
+                    <option value="nebraska">NE</option>
+                    <option value="nevada">NV</option>
+                    <option value="new hampshire">NH</option>
+                    <option value="new jersey">NJ</option>
+                    <option value="new mexico">NM</option>
+                    <option value="new york">NY</option>
+                    <option value="north carolina">NC</option>
+                    <option value="north dakota">ND</option>
+                    <option value="ohio">OH</option>
+                    <option value="oklahoma">OK</option>
+                    <option value="oregon">OR</option>
+                    <option value="pennsylvania">PA</option>
+                    <option value="rhode island">RI</option>
+                    <option value="south carolina">SC</option>
+                    <option value="south dakota">SD</option>
+                    <option value="tennessee">TN</option>
+                    <option value="texas">TX</option>
+                    <option value="utah">UT</option>
+                    <option value="vermont">VT</option>
+                    <option value="virginia">VA</option>
+                    <option value="washington">WA</option>
+                    <option value="west virginia">WV</option>
+                    <option value="wisconsin">WI</option>
+                    <option value="wyoming">WY</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputPostalCode">Postal Code</label>
+                  <input type="text" class="form-control" id="inputPostalCode">
+                </div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="form-floating">
+              Contact Preference:  
+              <input type="radio" name="contactType" value="email"> Email
+              <input type="radio" name="contactType" value="phone"> Phone
+              <input type="radio" name="contactType" value="mail"> Mail
+            </div>
+          </p>
+            </fieldset>
             <fieldset>
                 <legend>Security Questions</legend>
-            <p>
-                Select a Security Question: <select>
+          <p>
+                Select a Security Question: <select name="question1" class="form-control" id="inputQuestion1" placeholder="question1">
                 <option value="maidenName">What is your Mother's Maiden name?</option>
                 <option value="bestFriend">Who was your childhood best friend?</option>
                 <option value="firstPet">What was the name of your first pet?</option>
                 <option value="highSchool">What high school did you graduate from?</option>
-            </select>
+              </select>
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Answer1">
-                <label for="floatingInput">Answer</label>
-              </div>
-            </p>
-            </p>  
-              Select a Security Question: <select>
+              <input type="text" class="form-control" id="floatingInput" placeholder="Answer1">
+              <label for="floatingInput">Answer</label>
+            </div>
+          </p>
+          <p>  
+                Select a Security Question: <select name="question2" class="form-control" id="inputQuestion2" placeholder="question2">
                 <option value="maidenName">What is your favorite vacation destination?</option>
                 <option value="bestFriend">Where is the furthest you've traveled?</option>
                 <option value="firstPet">What is your dream job?</option>
                 <option value="highSchool">What town were you born in?</option>
-            </select>
+              </select>
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Answer2">
-                <label for="floatingInput">Answer</label>
-              </div>
-            </p>
-            <p>
-              Select a Security Question: <select>
+              <input type="text" class="form-control" id="floatingInput" placeholder="Answer2">
+              <label for="floatingInput">Answer</label>
+            </div>
+          </p>
+          <p>
+                Select a Security Question: <select name="question3" class="form-control" id="inputQuestion3" placeholder="question3">
                 <option value="maidenName">What is your favorite hobby?</option>
                 <option value="bestFriend">Who is your favorite actor?</option>
                 <option value="firstPet">What is your favorite movie?</option>
                 <option value="highSchool">What was the make of your first vehicle?</option>
-            </select>
+              </select>
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Answer3">
-                <label for="floatingInput">Answer</label>
-              </div>
-            </p>
+              <input type="text" class="form-control" id="floatingInput" placeholder="Answer3">
+              <label for="floatingInput">Answer</label>
+            </div>
+          </p>
             </fieldset>
-
               <div class="checkbox mb-3">
                 <label>
-                  <input type="checkbox" value="remember-me"> Check here if you want to receive emails about special offers.
+                <input type="checkbox" value="remember-me"> Check here if you want to receive emails about special offers.
                 </label>
               </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-              <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-            </form>
-          </main>
-          <footer>
-
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2021 Copyright:
-              <a class="text-dark" href="https://myTravelPlanner.com/">myTravelPlanner.com</a>
-            </div>
-          
-            </footer>
-    
-
-
+              <button class="w-50 btn btn-md btn-primary" type="submit">Sign in</button>
+          <p>
+          </p>
+          </form>
+          </div>
+        </main>
+        <footer>
+          <div class="footer">
+            © 2021 Copyright:
+            <a class="text-light" href="https://myTravelPlanner.com/">myTravelPlanner.com</a>
+          </div>
+      </footer>
     </div>
 </body>
-
 </html>
