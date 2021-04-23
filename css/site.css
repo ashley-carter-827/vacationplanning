@@ -1,8 +1,9 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color:rgba(0, 0, 0);
+  background-image: url('../images/triangle.jpg');
   background-repeat: repeat;
+  color: black;
 }
 
 #hero{
@@ -22,11 +23,11 @@ body {
 
 .card {
       width: 20%;
-      height: 500px; 
+      height: 550px; 
       margin: 2.5%;
       padding-top: 15%;
       float: left;
-      background-color: white;
+      background-color: lightgray;
       text-align: center;
       color: black;
       background-size:contain;
@@ -53,8 +54,8 @@ body {
   background-image: url("../images/offerings/honeymoon.jpg");
 }
     
-.card#reunion {
-  background-image: url("../images/offerings/reunion.jpg");
+.card#bachelorette {
+  background-image: url("../images/offerings/vegas.jpg");
 }
     
 .card#serene {
@@ -73,7 +74,7 @@ body {
   background-image: url("../images/offerings/wedding.jpg");
 }
     
-.card#disneyworld {
+.card#disney {
   background-image: url("../images/offerings/disneyworld.jpg");
 }
     
@@ -100,9 +101,18 @@ select:invalid{
 .footer {
   position: static;
   left: 0;
-  bottom: 30px;
+  bottom: 20px;
   width: 100%;
-  background-color: black;
   color: gray;
   text-align:center;
 }
+
+table {
+  width: 50%;
+  background-color: lightgray;
+}
+
+th {
+  height:70px;
+}
+
